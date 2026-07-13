@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title">
+  <title id="title">Stylized game interface dashboard</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071827"/><stop offset=".5" stop-color="#07111d"/><stop offset="1" stop-color="#160720"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172033"/><stop offset="1" stop-color="#0b0f18"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#94a3b8"><path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200M0 600h1200"/><path d="M120 0v700M240 0v700M360 0v700M480 0v700M600 0v700M720 0v700M840 0v700M960 0v700M1080 0v700"/></g>
+  <g transform="translate(65 70)">
+    <rect width="1070" height="560" rx="34" fill="#080b12" stroke="#334155" stroke-width="4"/>
+    <rect x="0" y="0" width="1070" height="70" rx="34" fill="#111827"/>
+    <circle cx="36" cy="35" r="8" fill="#f87171"/><circle cx="62" cy="35" r="8" fill="#fbbf24"/><circle cx="88" cy="35" r="8" fill="#34d399"/>
+    <rect x="140" y="25" width="260" height="18" rx="9" fill="#334155"/>
+    <rect x="900" y="22" width="125" height="26" rx="13" fill="url(#accent)" opacity=".85"/>
+
+    <rect x="26" y="95" width="245" height="436" rx="24" fill="url(#panel)" stroke="#273244"/>
+    <rect x="50" y="126" width="160" height="16" rx="8" fill="#94a3b8" opacity=".85"/>
+    <g fill="#1e293b"><rect x="50" y="174" width="195" height="46" rx="13"/><rect x="50" y="234" width="195" height="46" rx="13"/><rect x="50" y="294" width="195" height="46" rx="13"/><rect x="50" y="354" width="195" height="46" rx="13"/></g>
+    <rect x="50" y="174" width="6" height="46" rx="3" fill="#22d3ee"/>
+    <g fill="#64748b"><rect x="76" y="190" width="92" height="11" rx="5"/><rect x="76" y="250" width="118" height="11" rx="5"/><rect x="76" y="310" width="103" height="11" rx="5"/><rect x="76" y="370" width="124" height="11" rx="5"/></g>
+
+    <g transform="translate(296 95)">
+      <rect width="350" height="205" rx="24" fill="url(#panel)" stroke="#273244"/>
+      <rect x="25" y="24" width="140" height="15" rx="7" fill="#cbd5e1" opacity=".85"/>
+      <rect x="25" y="56" width="86" height="9" rx="4" fill="#64748b"/>
+      <path d="M30 160 95 108l58 24 66-76 55 47 51-63" fill="none" stroke="url(#accent)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 164h292" stroke="#334155" stroke-width="3"/>
+      <g fill="#22d3ee"><circle cx="95" cy="108" r="7"/><circle cx="219" cy="56" r="7"/><circle cx="325" cy="40" r="7"/></g>
+    </g>
+
+    <g transform="translate(671 95)">
+      <rect width="373" height="205" rx="24" fill="url(#panel)" stroke="#273244"/>
+      <rect x="24" y="24" width="145" height="15" rx="7" fill="#cbd5e1" opacity=".85"/>
+      <g transform="translate(24 64)">
+        <rect width="98" height="112" rx="18" fill="#0f172a"/><rect x="112" width="98" height="112" rx="18" fill="#0f172a"/><rect x="224" width="98" height="112" rx="18" fill="#0f172a"/>
+        <circle cx="49" cy="44" r="24" fill="#22d3ee" opacity=".7"/><circle cx="161" cy="44" r="24" fill="#8b5cf6" opacity=".75"/><circle cx="273" cy="44" r="24" fill="#ec4899" opacity=".72"/>
+        <rect x="26" y="82" width="46" height="8" rx="4" fill="#64748b"/><rect x="138" y="82" width="46" height="8" rx="4" fill="#64748b"/><rect x="250" y="82" width="46" height="8" rx="4" fill="#64748b"/>
+      </g>
+    </g>
+
+    <g transform="translate(296 325)">
+      <rect width="748" height="206" rx="24" fill="url(#panel)" stroke="#273244"/>
+      <rect x="24" y="24" width="154" height="15" rx="7" fill="#cbd5e1" opacity=".85"/>
+      <g transform="translate(24 62)">
+        <rect width="700" height="36" rx="13" fill="#0f172a"/><rect y="50" width="700" height="36" rx="13" fill="#0f172a"/><rect y="100" width="700" height="36" rx="13" fill="#0f172a"/>
+        <rect width="428" height="36" rx="13" fill="#22d3ee" opacity=".52"/><rect y="50" width="562" height="36" rx="13" fill="#8b5cf6" opacity=".5"/><rect y="100" width="319" height="36" rx="13" fill="#ec4899" opacity=".46"/>
+      </g>
+    </g>
+  </g>
+</svg>

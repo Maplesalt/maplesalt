@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stylized game developer avatar</title>
+  <desc id="desc">A dark blocky character holding a glowing purple blade, surrounded by blue and violet energy.</desc>
+  <defs>
+    <radialGradient id="aura" cx="50%" cy="45%" r="58%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".46"/>
+      <stop offset=".45" stop-color="#2563eb" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#03050b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#232a39"/>
+      <stop offset=".55" stop-color="#0e121c"/>
+      <stop offset="1" stop-color="#05070c"/>
+    </linearGradient>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#202838"/>
+      <stop offset=".65" stop-color="#090c13"/>
+      <stop offset="1" stop-color="#03050a"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38bdf8"/>
+      <stop offset=".5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#e0f2fe"/>
+      <stop offset=".18" stop-color="#38bdf8"/>
+      <stop offset=".55" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#d946ef"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="16" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="555" cy="454" rx="420" ry="360" fill="url(#aura)"/>
+  <g opacity=".5" fill="none" stroke-linecap="round">
+    <path d="M170 570C90 394 286 171 492 228s274 314 452 228" stroke="#8b5cf6" stroke-width="4"/>
+    <path d="M203 702c172 82 271-21 400-125s242-118 340-28" stroke="#22d3ee" stroke-width="3" opacity=".65"/>
+    <path d="M220 316c168-133 437-144 652 9" stroke="#d946ef" stroke-width="2" opacity=".5"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="175" cy="386" r="5" opacity=".9"/><circle cx="239" cy="233" r="3" opacity=".7"/>
+    <circle cx="892" cy="283" r="4" opacity=".85"/><circle cx="940" cy="548" r="3" opacity=".7"/>
+    <circle cx="753" cy="142" r="3" opacity=".65"/><circle cx="355" cy="742" r="4" opacity=".75"/>
+  </g>
+
+  <g transform="translate(222 52)">
+    <ellipse cx="340" cy="704" rx="240" ry="50" fill="#000" opacity=".48" filter="url(#soft)"/>
+
+    <path d="M231 222c14-114 194-171 282-65 40 48 43 122 12 177l-48 59-197-19-69-68c-10-27-5-59 20-84Z" fill="url(#hood)" stroke="#475569" stroke-opacity=".45" stroke-width="5"/>
+    <path d="M276 180c45-62 138-78 198-22-21-72-79-111-121-112-36 10-69 50-77 134Z" fill="#101522"/>
+    <path d="M290 234c35-51 143-62 189-5 18 22 24 52 15 80-26 83-177 91-219 20-16-27-10-65 15-95Z" fill="#05070c" stroke="#2c3444" stroke-width="4"/>
+    <path d="M323 269c25-16 47-14 67 3-23 22-44 22-67-3Zm94 2c20-17 42-19 66-2-21 24-43 25-66 2Z" fill="#c084fc" filter="url(#glow)"/>
+
+    <path d="M242 360c63-46 213-48 279 1l74 219-87 100H249l-88-100 81-220Z" fill="url(#armor)" stroke="#4b5563" stroke-opacity=".34" stroke-width="5"/>
+    <path d="M287 365c51-28 151-29 197 0l-19 120-84 62-78-60-16-122Z" fill="#0a0d14" stroke="#334155" stroke-width="4"/>
+    <path d="m332 396 51 41 48-44 19 93-69 52-69-50 20-92Z" fill="url(#brand)" opacity=".94" filter="url(#glow)"/>
+
+    <path d="M160 397 62 473l30 164 121-14 44-218-97-8Z" fill="url(#armor)" stroke="#4b5563" stroke-opacity=".35" stroke-width="5"/>
+    <path d="m516 398 102 72-25 166-124-14-41-217 88-7Z" fill="url(#armor)" stroke="#4b5563" stroke-opacity=".35" stroke-width="5"/>
+    <path d="m91 621 53 21 69-19-12 73-89 31-53-51 32-55Zm503 12-54 19-72-30 14 76 92 27 51-55-31-37Z" fill="#0a0d14" stroke="#334155" stroke-width="4"/>
+
+    <path d="M262 645 231 796l105 2 45-151-119-2Zm124 2 43 151 108-4-34-150-117 3Z" fill="url(#armor)" stroke="#4b5563" stroke-opacity=".36" stroke-width="5"/>
+    <path d="m231 791-25 54 134 1-4-48-105-7Zm199 4-1 49 135-1-28-52-106 4Z" fill="#05070b" stroke="#334155" stroke-width="4"/>
+
+    <g transform="translate(-14 590) rotate(-11 355 55)">
+      <rect x="111" y="35" width="425" height="32" rx="16" fill="#121826" stroke="#475569" stroke-width="5"/>
+      <path d="M500 22 610 51 500 80l18-29-18-29Z" fill="url(#blade)" filter="url(#glow)"/>
+      <rect x="133" y="26" width="330" height="50" rx="25" fill="url(#blade)" filter="url(#glow)" opacity=".95"/>
+      <rect x="70" y="22" width="52" height="58" rx="12" fill="#111827" stroke="#94a3b8" stroke-opacity=".5" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

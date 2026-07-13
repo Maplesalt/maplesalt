@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title">
+  <title id="title">Stylized open world camera scene</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0ea5e9"/><stop offset=".55" stop-color="#1d4ed8"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#64748b"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#052e16"/></linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fef3c7"/><stop offset=".3" stop-color="#fde68a" stop-opacity=".9"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="920" cy="122" r="120" fill="url(#sun)"/>
+  <path d="M0 380 190 180l132 128 146-194 170 192 139-150 154 167 132-117 137 153v157H0Z" fill="url(#mount)" opacity=".92"/>
+  <path d="M0 442c238-88 415-83 596-12 209 82 418 9 604-65v335H0Z" fill="url(#grass)"/>
+  <path d="M0 547c278-48 432-17 645 44 193 55 337 35 555-15v124H0Z" fill="#031b11" opacity=".72"/>
+  <g fill="#163b24">
+    <path d="m105 403 31-95 31 95h-20v70h-24v-70Z"/><path d="m232 416 28-83 28 83h-18v62h-22v-62Z"/>
+    <path d="m998 382 36-108 36 108h-23v78h-28v-78Z"/><path d="m1094 425 26-78 27 78h-17v57h-20v-57Z"/>
+  </g>
+  <g transform="translate(505 366)">
+    <ellipse cx="100" cy="252" rx="105" ry="24" fill="#000" opacity=".35"/>
+    <rect x="56" y="0" width="92" height="88" rx="18" fill="#151b28" stroke="#64748b" stroke-width="5"/>
+    <path d="M46 82h112l42 137H5Z" fill="#111827" stroke="#475569" stroke-width="5"/>
+    <path d="m74 112 28 24 29-25 14 61-43 32-42-31 14-61Z" fill="#22d3ee" filter="url(#glow)"/>
+    <path d="m16 100-47 65 34 54 38-38 8-90-33 9Zm172-1 48 66-34 54-39-38-8-90 33 8Z" fill="#0f172a" stroke="#475569" stroke-width="5"/>
+  </g>
+  <g fill="none" stroke="#67e8f9" stroke-width="5" opacity=".95" filter="url(#glow)">
+    <circle cx="607" cy="448" r="152"/>
+    <path d="M607 275v68M607 553v68M434 448h68M712 448h68"/>
+    <path d="M492 345c31-34 70-49 115-49M723 345c-31-34-70-49-115-49" opacity=".65"/>
+  </g>
+  <g fill="#dbeafe" opacity=".82">
+    <rect x="66" y="52" width="185" height="10" rx="5"/><rect x="66" y="76" width="124" height="8" rx="4" opacity=".6"/>
+    <rect x="1005" y="589" width="128" height="8" rx="4"/><rect x="1045" y="613" width="88" height="7" rx="4" opacity=".55"/>
+  </g>
+</svg>
