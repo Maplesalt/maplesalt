@@ -37,6 +37,8 @@ const X_URL = "https://x.com/Carmackdisciple";
 const DISCORD_USERNAME = "maplesalt";
 const GAME_URL = "https://www.roblox.com/games/105603252908405/CLICK-THE-COOKIES";
 
+const asset = (fileName) => `${import.meta.env.BASE_URL}assets/${fileName}`;
+
 const SECTION_LINKS = [
   { id: "top", label: "Introduction" },
   { id: "projects", label: "Scripts" },
@@ -62,8 +64,8 @@ const projects = [
     details:
       "Target acquisition, attack windup, attack-speed scaling, command movement, pathing, aggro rules, target switching, and reusable combat state.",
     tags: ["Combat", "Networking", "OOP", "Jecs"],
-    image: "/assets/combat-anime.webp",
-    video: "/assets/1.mp4",
+    image: asset("combat-anime.webp"),
+    video: asset("1.mp4"),
     icon: <SportsEsportsRoundedIcon />,
     accent: "project-red",
   },
@@ -76,8 +78,8 @@ const projects = [
     details:
       "Distance validation, mouse-driven target switching, camera tracking, character facing, cooldown logic, and animated target feedback.",
     tags: ["Camera", "Targeting", "CFrame", "Input"],
-    image: "/assets/camera-anime.webp",
-    video: "/assets/2.mp4",
+    image: asset("camera-anime.webp"),
+    video: asset("2.mp4"),
     icon: <MouseRoundedIcon />,
     accent: "project-cyan",
   },
@@ -90,8 +92,8 @@ const projects = [
     details:
       "Purchase modes, animated progression displays, stats overlays, persistent UI state, upgrade flow, and modular presentation logic.",
     tags: ["UI", "Progression", "State", "Modules"],
-    image: "/assets/ui-anime.webp",
-    video: "/assets/3.mp4",
+    image: asset("ui-anime.webp"),
+    video: asset("3.mp4"),
     href: GAME_URL,
     icon: <QueryStatsRoundedIcon />,
     accent: "project-violet",
@@ -477,7 +479,7 @@ export default function App() {
               </Box>
 
               <Box className="process-poster" data-reveal="right" style={{ "--delay": "130ms" }}>
-                <img src="/assets/8-cell-simple.gif" alt="Animated eight-cell demonstration for the development process" loading="lazy" />
+                <img src={asset("8-cell-simple.gif")} alt="Animated eight-cell demonstration for the development process" loading="lazy" />
                 <Box className="process-poster-copy">
                   <Typography>I don&apos;t just write code.</Typography>
                   <Typography>I build <span>experiences.</span></Typography>
@@ -491,7 +493,7 @@ export default function App() {
           <Container maxWidth="xl">
             <Card variant="outlined" className="about-card">
               <Box className="about-visual" data-reveal="left">
-                <img src="/assets/Screenshot_128.png" alt="Roblox development screenshot representing Maplesalt's years with the engine" loading="lazy" />
+                <img src={asset("Screenshot_128.png")} alt="Roblox development screenshot representing Maplesalt's years with the engine" loading="lazy" />
                 <Box className="about-visual-badge">
                   <GamepadRoundedIcon />
                   <Box>
