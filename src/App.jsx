@@ -64,7 +64,6 @@ const projects = [
     details:
       "Target acquisition, attack windup, attack-speed scaling, command movement, pathing, aggro rules, target switching, and reusable combat state.",
     tags: ["Combat", "Networking", "OOP", "Jecs"],
-    image: asset("combat-anime.webp"),
     video: asset("1.mp4"),
     icon: <SportsEsportsRoundedIcon />,
     accent: "project-red",
@@ -78,7 +77,6 @@ const projects = [
     details:
       "Distance validation, mouse-driven target switching, camera tracking, character facing, cooldown logic, and animated target feedback.",
     tags: ["Camera", "Targeting", "CFrame", "Input"],
-    image: asset("camera-anime.webp"),
     video: asset("2.mp4"),
     icon: <MouseRoundedIcon />,
     accent: "project-cyan",
@@ -92,7 +90,6 @@ const projects = [
     details:
       "Purchase modes, animated progression displays, stats overlays, persistent UI state, upgrade flow, and modular presentation logic.",
     tags: ["UI", "Progression", "State", "Modules"],
-    image: asset("ui-anime.webp"),
     video: asset("3.mp4"),
     href: GAME_URL,
     icon: <QueryStatsRoundedIcon />,
@@ -192,7 +189,6 @@ function ProjectCard({ project, index, onExpand }) {
       >
         <video
           src={project.video}
-          poster={project.image}
           autoPlay
           muted
           loop
@@ -322,7 +318,7 @@ export default function App() {
         <Toolbar>
           <Container maxWidth="xl" className="nav-inner">
             <Link href="#top" underline="none" color="inherit" className="brand">
-              <Box className="brand-mark">M</Box>
+              <Box className="brand-mark" aria-hidden="true"><GamepadRoundedIcon /></Box>
               <Typography fontWeight={850}>MAPLESALT</Typography>
             </Link>
 
@@ -609,7 +605,6 @@ export default function App() {
               <video
                 key={expandedProject.video}
                 src={expandedProject.video}
-                poster={expandedProject.image}
                 autoPlay
                 muted
                 loop
